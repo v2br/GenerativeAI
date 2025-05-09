@@ -1,0 +1,35 @@
+[project]
+name = "GenerativeAI"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Mauro Di Pietro, Vadim Barilko", email = "vadibar@gmail.com"},
+]
+dependencies = [
+    "chromadb==0.5.0",
+    "ollama>=0.4.8",
+    "pdf2image==1.17.0",
+    "pytesseract==0.3.10",
+    "streamlit==1.35.0",
+    "SpeechRecognition==3.10.4",
+    "gTTS==2.5.1",
+    "langchain>=0.3.25",
+    "duckduckgo-search>=8.0.1",
+    "wikipedia>=1.4.0",
+    "langchain-community>=0.3.21",
+    "langgraph>=0.4.3",
+    "ipykernel>=6.29.5",
+]
+requires-python = "==3.13.*"
+readme = "README.md"
+license = {text = "n"}
+
+
+[tool.pdm]
+distribution = false
+
+[dependency-groups]
+dev = [
+    "jupyterlab>=4.4.2",
+    "ipykernel>=6.29.5",
+]
